@@ -1,0 +1,465 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	font-family: 'Roboto', sans-serif;
+	list-style-type: none;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+body {
+	background-color: #212121;
+	margin: 0;
+}
+
+#tj {
+	color: #ff0000;
+	font-size: 96px;
+	line-height: 68px;
+	letter-spacing: -7px;
+	font-weight: 600;
+}
+
+#tagline {
+	color: #ffffff;
+	font-size: 14px;
+	letter-spacing: 0px;
+	line-height: 18px;
+}
+
+a[title]:hover{
+	color: #ff0000;
+	font-size:24px;
+} 
+
+#content {
+	width: 1000px;
+	height: 4150px;
+	overflow: hidden;
+	background: url(images/bkg.jpg) no-repeat;
+	color: #212121;
+}
+
+#menu {
+	position: fixed;
+	margin: 150px 0 0 65px;
+}
+
+#menulink {
+	margin-top: 50px;
+}
+
+.anchors {
+	margin: 20px 0 0 40px;
+	color: #ffffff;
+	font-size:24px;
+}
+
+.anchors:hover {
+	color: #ff0000;
+	font-size: 24px;
+}
+
+.icons {
+	margin: 40px 10px 0 0;
+	color:#ff0000;
+}
+
+.icons[data-tip]:before {
+	border-top-color:#ff0000;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+}
+.icons[data-tip]:after {
+	background:#ff0000;
+	color:#fff;
+}
+
+[data-tip] {
+	position:relative;
+}
+[data-tip]:before {
+	content:'';
+	/* hides the tooltip when not hovered */
+	display:none;
+	border:5px solid #1a1a1a;
+	/* 4 border technique to create the arrow */
+	border-top-color:#1a1a1a;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	position:absolute;
+	top:-17px;
+	left:10px;
+	z-index:8;
+	font-size:0;
+	line-height:0;
+	width:0;
+	height:0;
+}
+[data-tip]:after {
+	display:none;
+	content:attr(data-tip);
+	position:absolute;
+	top:-45px;
+	left:0px;
+	padding:5px 8px;
+	background:#1a1a1a;
+	color:#fff;
+	z-index:9;
+	font-size: 0.75em;
+	height:18px;
+	line-height:18px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	white-space:nowrap;
+	word-wrap:normal;
+}
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+	display:block;
+}
+
+#resume {
+	display: block;
+	float: left;
+	background: url(images/resume.png);
+	width: 23px;
+	height: 30px;
+	margin-left: 65px;
+}
+
+#resume:hover { 
+	background-position: 0 -30px;
+	font-size: 24px;
+}
+
+#github {
+	display: block;
+	float: left;
+	background: url(images/github.png);
+	width: 30px;
+	height: 29px;
+	margin-top: 42px;
+}
+
+#github:hover { 
+	background-position: 0 -29px;
+	font-size: 24px;
+}
+
+#linkedin {
+	display: block;
+	float: left;
+	background: url(images/linkedin.png);
+	width: 23px;
+	height: 21px;
+	margin-top: 45px;
+}
+
+#linkedin:hover { 
+	background-position: 0 -21px;
+	font-size: 24px;
+}
+
+#phone {
+	display: block;
+	float: left;
+	background: url(images/phone.png);
+	width: 18px;
+	height: 24px;
+	margin-top: 45px;
+}
+
+#phone:hover { 
+	background-position: 0 -24px;
+	font-size: 24px;
+}
+
+#email {
+	display: block;
+	float: left;
+	background: url(images/email.png);
+	width: 26px;
+	height: 20px;
+	margin-top: 45px;
+}
+
+#email:hover { 
+	background-position: 0 -20px;
+	font-size: 24px;
+}
+
+#rightside {
+	position: absolute;
+	margin: 150px 0 0 550px;
+	width:250px;
+}
+
+.touts  {
+	margin: 10px 0 40px 0;
+}
+
+.sitetop {
+	color: #ff0000;
+	font-size: 24px;
+	line-height: 20px;
+}
+
+#focus {
+	display: block;
+	background: url(images/focus.png);
+	width: 250px;
+	height: 140px;
+}
+
+#focus:hover { 
+	background-position: 0 -140px;
+}
+
+#befairdc {
+	display: block;
+	background: url(images/befairdc.png);
+	width: 250px;
+	height: 140px;
+}
+
+#befairdc:hover { 
+	background-position: 0 -140px;
+}
+
+#dashboard {
+	display: block;
+	background: url(images/dashboard.png);
+	width: 250px;
+	height: 140px;
+}
+
+#dashboard:hover { 
+	background-position: 0 -140px;
+}
+
+#ifcmw {
+	display: block;
+	background: url(images/ifcmw.png);
+	width: 250px;
+	height: 140px;
+}
+
+#ifcmw:hover { 
+	background-position: 0 -140px;
+}
+
+#pioneer {
+	display: block;
+	background: url(images/pioneer.png);
+	width: 250px;
+	height: 140px;
+}
+
+#pioneer:hover { 
+	background-position: 0 -140px;
+}
+
+#client {
+	display: block;
+	background: url(images/client.png);
+	width: 250px;
+	height: 140px;
+}
+
+#client:hover { 
+	background-position: 0 -140px;
+}
+
+#life {
+	position: absolute;
+	display: block;
+	width:168px;
+	height:667px;
+	margin: 250px 0 0 41px;
+}
+
+#goldengate {
+	height: 40px;
+	width: 128px;
+	background: url(images/goldengate.png);
+	margin-left: 20px;
+}
+
+#mando {
+	height: 40px;
+	width: 84px;
+	background: url(images/mando.png);
+}
+
+#board {
+	height: 52px;
+	width: 52px;
+	margin: -37px 0 0 116px;
+	background: url(images/board.png);
+	z-index: -1;
+}
+
+#airplane {
+	height: 36px;
+	width: 72px;
+	margin: 0 0 0 36px;
+	background: url(images/airplane.png);
+}
+
+.lifered {
+	color: #ff0000;
+}
+
+.lifebrown {
+	color: #212121;
+}
+
+#currently {
+	font-size: 28px; 
+	letter-spacing: 1px;
+	line-height: 16px;
+}
+
+#ilivein {
+	font-size: 24px; 
+	letter-spacing: 8px;
+}
+
+#sausalito {
+	font-size: 32px; 
+	letter-spacing: -1px;
+	line-height: 18px;
+}
+
+#california {
+	font-size: 24px; 
+	letter-spacing: 3px;
+	line-height: 36px;
+}
+
+#music {
+	margin-top: 50px;
+}
+
+#playsome {
+	font-size: 24px; 
+	letter-spacing: 2px;
+	line-height: 12px;
+}
+
+#mandolin {
+	font-size: 28px; 
+	letter-spacing: 3.5px;
+}
+
+#and {
+	font-size: 16px; 
+	letter-spacing: 1px;
+	line-height: 16px;
+}
+
+#guitar {
+	font-size: 28px; 
+	letter-spacing: 5px;
+}
+
+#athletics {
+	margin-top: 50px;
+}
+
+#sports {
+	font-size: 32px; 
+	letter-spacing: 8px;
+	line-height: 38px;
+}
+
+#involving {
+	font-size: 24px; 
+	letter-spacing: 5px;
+	line-height: 16px;
+}
+
+#boards {
+	font-size: 28px; 
+	letter-spacing: 0px;
+	line-height: 40px;
+}
+
+#orthe {
+	font-size: 18px; 
+	letter-spacing: 9px;
+	line-height: 6px;
+}
+
+#outdoors {
+	font-size: 28px; 
+	letter-spacing: 2px;
+	line-height: 12px;
+}
+
+#captivate {
+	font-size: 24px; 
+	letter-spacing: -0.5px;
+	line-height: 40px;
+}
+
+#travel {
+	margin-top: 50px;
+}
+
+#ive {
+	font-size: 18px; 
+	letter-spacing: -0.5px;
+	line-height: 36px;
+}
+
+#visited {
+	font-size: 32px; 
+	letter-spacing: 2px;
+	line-height: 0px;
+}
+
+#thirty {
+	font-size: 32px; 
+	letter-spacing: 0px;
+	line-height: 0px;
+}
+
+#countries {
+	font-size: 24px; 
+	letter-spacing: -2px;
+	line-height: 36px;
+}
+
+#and2 {
+	font-size: 16px; 
+	letter-spacing: 0px;
+	line-height: 16px;
+}
+
+#forty-two {
+	font-size: 32px; 
+	letter-spacing: 0px;
+	line-height: 16px;
+}
+
+#states {
+	font-size: 24px; 
+	letter-spacing: -0.5px;
+	line-height: 16px;
+}
+
+#tools {
+	position: absolute;
+	margin: 250px 0 0 0;
+}
+
+.tooltitle {
+	color: #ff0000;
+	font-size: 24px;
+}
