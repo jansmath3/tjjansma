@@ -467,40 +467,40 @@ a[title]:hover{
 #really {
 	font-size: 24px; 
 	letter-spacing: -1px;
-	line-height: 24px;
+	line-height: 28px;
 }
 
 #megiddy {
 	font-size: 18px; 
-	line-height: 36px;
+	line-height: 30px;
 }
 
 #giddy {
-	font-size: 36px; 
-	letter-spacing: 6px;
-	line-height: 36px;
+	font-size: 32px; 
+	letter-spacing: 8px;
+	line-height: 30px;
 }
 
 #iswhenan {
-	font-size: 18px; 
-	letter-spacing: -1.5px;
-	line-height: 4px;
+	font-size: 14px; 
+	letter-spacing: 0px;
+	line-height: 10px;
 	text-align: right;
 	margin-right: 10px;
 }
 
 #idea {
-	font-size: 36px; 
+	font-size: 32px; 
 	letter-spacing: 2.5px;
-	line-height: 48px;
+	line-height: 40px;
 	text-align: right;
 	margin-right: 10px;
 }
 
 #becomes {
 	font-size: 18px; 
-	letter-spacing: 0.5px;
-	line-height: 4px;
+	letter-spacing: -0.5px;
+	line-height: 14px;
 	text-align: right;
 	margin-right: 10px;
 }
@@ -508,16 +508,16 @@ a[title]:hover{
 #lightbulb {
 	height: 48px;
 	width: 48px;
-	margin: -52px 0 12px 5px;
+	margin: -58px 0 20px 9px;
 	background: url(images/lightbulb.png);
 }
 
 #reality {
-	font-size: 36px; 
-	letter-spacing: -0.5px;
-	line-height: 30px;
+	font-size: 32px; 
+	letter-spacing: 5px;
+	line-height: 18px;
 	text-align: right;
-	margin-right: 10px;
+	margin-right: 12px;
 }
 
 #tools {
