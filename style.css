@@ -35,7 +35,7 @@ a[title]:hover{
 
 #content {
 	width: 1000px;
-	height: 4150px;
+	height: 4350px;
 	overflow: hidden;
 	background: url(images/bkg.jpg) no-repeat;
 	color: #212121;
@@ -452,6 +452,72 @@ a[title]:hover{
 	font-size: 24px; 
 	letter-spacing: -0.5px;
 	line-height: 16px;
+}
+
+#create {
+	margin-top: 50px;
+}
+
+#but {
+	font-size: 24px; 
+	letter-spacing: 5.5px;
+	line-height: 24px;
+}
+
+#really {
+	font-size: 24px; 
+	letter-spacing: -1px;
+	line-height: 24px;
+}
+
+#megiddy {
+	font-size: 18px; 
+	line-height: 36px;
+}
+
+#giddy {
+	font-size: 36px; 
+	letter-spacing: 6px;
+	line-height: 36px;
+}
+
+#iswhenan {
+	font-size: 18px; 
+	letter-spacing: -1.5px;
+	line-height: 4px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+#idea {
+	font-size: 36px; 
+	letter-spacing: 2.5px;
+	line-height: 48px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+#becomes {
+	font-size: 18px; 
+	letter-spacing: 0.5px;
+	line-height: 4px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+#lightbulb {
+	height: 48px;
+	width: 48px;
+	margin: -52px 0 12px 5px;
+	background: url(images/lightbulb.png);
+}
+
+#reality {
+	font-size: 36px; 
+	letter-spacing: -0.5px;
+	line-height: 30px;
+	text-align: right;
+	margin-right: 10px;
 }
 
 #tools {
