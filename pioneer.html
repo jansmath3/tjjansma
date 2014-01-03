@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Website of TJ Jansma | Web Developer and Information Technologist</title>
+ 	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="Shortcut Icon" href="favicon.ico" />
+	<meta name="msvalidate.01" content="9455B9EC414623F463686D97E55E78A0" />
+	<meta name="Description" content="What really makes me giddy, is when an idea becomes reality." />
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' /></title>
+    <script src="./js/jquery.js"></script>
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+<script>
+$(window).ready(updateHeight);
+$(window).resize(updateHeight);
+
+function updateHeight()
+{
+    var div = $('.life, .work, .contact');
+    var width = div.width();
+    
+    div.css('height', width);
+}
+</script>
+</head>
+<body>
+	
+	<div id="main">
+    	<div id="workhdr" class="head">
+    	  <div id="case"> Pioneer Case Study</div><img src="./images/work.png" id="lifehdrimg" class="subhead"></div>
+    <div id="left">
+    	<div class="back"><a href="http://pioneerstrategy.com" target="_blank">Go to Site</a></div>
+    	<div id="pioneerscr1"><img src="./images/pioneer.jpg" width="136%" height="31%" class="focusscr"></a></div>
+    </div>
+    <div id="right">
+    	<div id="rightmargin">
+		<div class="casehd">Summary:</div> 
+		<p>This project required extremely minimalist design with sparse information.</p>
+		<div class="casehd">Requirements:</div>
+			<ol>
+				<li>3 day turn around </li>
+                <li>Extremely minimalist design</li>
+			</ol>
+		<div class="casehd">Problem:</div> 
+		<p>How to build a website in 3 days with little information to display</p>
+		<div class="casehd">Solution:</div> 
+		<p>Pioneer Strategy is a marketing firm that works primarily in the education sector that needed a website.  Their largest problem was that they were dealing with how much or little they wanted to advertise in order to satisfy all of their clients. Ultimately, they decided on creating an extremely minimalist website. Based on an extremely short timeframe for completion, I came up with the idea that site look like a simple business card. The idea went over well and I was able to put the HTML website together quickly to the satisfaction of the customer.</p>
+		<div class="casehd">Outcome:</div>  
+		<p>Design simplicity made this an easy project. This website is practical and gets the message its owners wanted across effectively.</p>
+        </div>
+        <div class="back"><a href="./index.html#work">Back</a></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Website of TJ Jansma | Web Developer and Information Technologist</title>
+ 	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="Shortcut Icon" href="favicon.ico" />
+	<meta name="msvalidate.01" content="9455B9EC414623F463686D97E55E78A0" />
+	<meta name="Description" content="What really makes me giddy, is when an idea becomes reality." />
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' /></title>
+    <script src="./js/jquery.js"></script>
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+<script>
+$(window).ready(updateHeight);
+$(window).resize(updateHeight);
+
+function updateHeight()
+{
+    var div = $('.life, .work, .contact');
+    var width = div.width();
+    
+    div.css('height', width);
+}
+</script>
+</head>
+<body>
+	
+	<div id="main">
+    	<div id="workhdr" class="head"><div id="case">FOCUS Case Study</div><img src="./images/work.png" id="lifehdrimg" class="subhead"></div>
+    <div id="left">
+    	<div class="back"><a href="http://focusdc.org" target="_blank">Go to Site</a></div>
+    	<div id="focusscr1"><a href="http://focusdc.org/" target="_blank"><img src="./images/focusscr1.jpg" class="focusscr"></a></div>
+        <div id="focusscr2"><a href="http://focusdc.org/data" target="_blank"><img src="./images/focusscr2.jpg" class="focusscr"></a></div>
+        <img src="./images/focusscr3.jpg" id="focusscr3" class="focusscr">
+    </div>
+    <div id="right">
+    	<div id="rightmargin">
+		<div class="casehd">Summary:</div> 
+		<p>This project required managing and subsequently rebuilding the FOCUS website in Drupal 6 and creating a constituent relationship management system for the organization.</p>
+		<div class="casehd">Requirements:</div>
+			<ol>
+				<li>Secure</li>
+				<li>Accessible anywhere</li>
+				<li>Flexible for current and future database needs</li>
+				<li>Functional/Minimalist design</li>
+				<li>Staff editable content</li>
+				<li>Easily attainable, organized information for end user</li>
+				<li>Contact tracking</li>
+				<li>Event tracking</li>
+				<li>Donation tracking</li>
+				<li>Bulk Mailings</li>
+			</ol>
+		<div class="casehd">Problem:</div> 
+		<p>How does a growing organization with differing design ideas and 15 years of scattered information/data create a minimalist website that accurately promotes the organization while satisfying the aesthetic and functional needs of its employees and users?</p>
+		<div class="casehd">Solution:</div> 
+		<p>When I joined the FOCUS team, FOCUS had contracted with a developer to rebuild the FOCUS website using Drupal 6, CiviCRM and Amazon EC2 to satisfy the needs of all parties and left the management of the project to me.  Ultimately, as you will find out, development fell to me.</p>
+		<p>Initially, despite the reluctance on the developer’s part, I decided to put the project on hold for several weeks while I interviewed each employee and created office workflow diagrams that would more easily map FOCUS’ needs to the CMS/CRM project we were undertaking.</p> 
+		<p>Once I had a better understanding of what FOCUS needed and we reassessed our timeframes and deliverables, I began the process of collecting and submitting the data to the developers.  The data mapping project went fairly smoothly and development began on the developer’s part.</p>
+		<p>Shortly thereafter, things began to unravel.  FOCUS’s executive director was unhappy with the theme that the developer had made and asked me to create a new one.  We had problems with the data upload matching our needs and development began to slow to a crawl.</p>
+		<p>Things came to a head when our Director of School Quality joined the project, cancelled the contract with the developer and gave me the project to finish.</p>
+        <p>Once I was given the reins, I divided the project into 3 phases:  Theme and Drupal release, CIVICRM cleanup and fundamental portions release, and secondary portions release.</p>
+		<p>Phase 1 proved to be difficult due to differing design thoughts by the stakeholders. It took 19 separate psd mockups and about a dozen revisions to the sitemap before I found a version that was acceptable to all parties involved.  Once I found a consensus, the creation of the theme went smoothly (I have since redone the theme 3 times, to get to the current version).</p>
+		<p>I then delegated website page revisions to departmental staff and focused on getting the public facing portion of the website up to meet our timeframe. 
+        <p>Setting up the fundamental portions of the CRM proved fairly simple and we began sending bulk mailings and setting up events.  However, the database was outdated and jumbled mess of 15,000 contacts with little connection between them.  Ultimately I started from scratch and reimported all contacts to create a clean database.  The process was time consuming but cut out almost 5,000 unnecessary contacts and gave a solid base to build from. </p> 
+		<p>Once things were running in the second phase, I began tackling the views that the developer had created.  Unfortunately, routine Drupal core and module updates began breaking the custom code used in the creation of several of these views.  I ultimately decided to rebuild these views from scratch and minimize the custom code needed to create these views.  Fortunately, I was able to recreate most of these views using Drupal’s views and CiviCRM profiles, but I did have to modify and use some of the custom code to adhere to FOCUS’ needs. </p>
+        <p> Next, I redesigned focusdc.org/data to unify the various data visualizations we had been building into a single repository.  After several mock ups, the current version with thumbnail representations which open lightboxes was approved and implemented.</p>
+		<p>The final piece of the puzzle was to migrate the donor data into the CRM.  This process went smoothly, but continues to raise challenges as we put more and more data into the CRM.  This includes customizing the PHP based reports and integration with events to satisfy FOCUS’ ever changing needs.</p>
+		<div class="casehd">Outcome:</div>  
+		<p>FOCUS now has a unified, web based location for tracking constituents and easily allowing charter schools to interact with our organization.  The first year since the redesign saw a 23% increase in web traffic to the site.  For the first time, FOCUS can track donations, sign someone up for an event, and send them an email all from one location.  Ultimately, the success of this project is that FOCUS has now used this system for two and a half years for its daily needs with very few stoppages due to the streamlined workflow.  </p>
+        </div>
+        <div class="back"><a href="./index.html#work">Back</a></div>
+    </div>
+</body>
+</html>

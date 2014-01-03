@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Website of TJ Jansma | Web Developer and Information Technologist</title>
+ 	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="Shortcut Icon" href="favicon.ico" />
+	<meta name="msvalidate.01" content="9455B9EC414623F463686D97E55E78A0" />
+	<meta name="Description" content="What really makes me giddy, is when an idea becomes reality." />
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' /></title>
+    <script src="./js/jquery.js"></script>
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+<script>
+$(window).ready(updateHeight);
+$(window).resize(updateHeight);
+
+function updateHeight()
+{
+    var div = $('.life, .work, .contact');
+    var width = div.width();
+    
+    div.css('height', width);
+}
+</script>
+</head>
+<body>
+	
+	<div id="main">
+    	<div id="workhdr" class="head">
+    	  <div id="case"> IFCMW Case Study</div><img src="./images/work.png" id="lifehdrimg" class="subhead"></div>
+    <div id="left">
+    	<div id="focusscr1"><img src="./images/ifcmw.jpg" class="focusscr"></a></div>
+    </div>
+    <div id="right">
+    	<div id="rightmargin">
+		<div class="casehd">Summary:</div> 
+		<p>This project required building a Drupal 6 website for a small Interfaith Non-Profit in Washington DC.</p>
+		<div class="casehd">Requirements:</div>
+			<ol>
+				<li>Full CMS</li>
+				<li>Staff must be trained to edit content and make updates to the site.</li>
+				<li>Migrate from a website the organization does not have access to.</li>
+				<li>Rebuild of flash logo with transitions to various pages of the website.</li>
+				<li>Design aethetics were loosely defined.</li>
+			</ol>
+		<div class="casehd">Problem:</div> 
+		<p>How do I create a full CMS system from a website the organization has little control over?</p>
+		<div class="casehd">Solution:</div> 
+		<p>This was my first project in which I built a full CMS. After doing my research, I settled on using Drupal because of its flexibility and large community support. As we will see, the results were mixed.</p>
+		<p>Theming went fairly smoothly as I used a fluid layout template to account for different browser sizes. Migration of data proved to be more difficult. The previous developer had not granted IFCMW full access to the original ASP based site and was unreachable to get this access, so I was unable to use any migration tools for the new site. Ultimately, I spent countless hours cutting and pasting old content and images into their new pages on the Drupal site.</p>
+		<p>Furthermore, once I had completed the new site locally, I had to switch the webhost from a Microsoft based server to Linux. This was a fairly simple process that only required a phone call. From this point, the website went up with few snags.</p>
+		<p>The largest problem came in training the staff and maintaining the website. I had hoped to train the staff on editing content as well as upgrading the website. This turned out to be a huge task, because the staff comprised of 2 full time employees and 1 part time employee as well as a revolving set of interns.  The part time employee was in charge of editing the website and as I started the training, it was clear that many of the technical aspects of the Drupal install would be overly time consuming and complicated for this employee.</p>
+		<p>Despite some hiccups with the website, she was able to make changes using the CMS, but updates proved to be too much and I maintained the site for about a year before I no longer could maintain the site.</p>
+		<div class="casehd">Outcome:</div>  
+		<p>IFCMW had a fully editable site with a nice WIZIWYG editor for creating content within the Drupal framework. Ultimately, I learned alot about the needs of a client and that sometimes the most flexible option isn't the best option. Although in most cases I believe Drupal is the best CMS for the job, I think I could have used a smaller, but more user friendly CMS like Wordpress for this project. As a result, my build lasted approximately 4 years, and ultimately was rebuilt with WordPress. I do think my approach would have worked better in Drupal 7 and hopefully with the usability improvements in Drupal 8, Drupal would be the optimal choice for resource limited projects like this one.</p>
+        </div>
+        <div class="back"><a href="./index.html#work">Back</a></div>
+    </div>
+</body>
+</html>

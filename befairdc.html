@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Website of TJ Jansma | Web Developer and Information Technologist</title>
+ 	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="Shortcut Icon" href="favicon.ico" />
+	<meta name="msvalidate.01" content="9455B9EC414623F463686D97E55E78A0" />
+	<meta name="Description" content="What really makes me giddy, is when an idea becomes reality." />
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' /></title>
+    <script src="./js/jquery.js"></script>
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+<script>
+$(window).ready(updateHeight);
+$(window).resize(updateHeight);
+
+function updateHeight()
+{
+    var div = $('.life, .work, .contact');
+    var width = div.width();
+    
+    div.css('height', width);
+}
+</script>
+</head>
+<body>
+	
+	<div id="main">
+    	<div id="workhdr" class="head">
+    	  <div id="case"> BeFairDC Case Study</div><img src="./images/work.png" id="lifehdrimg" class="subhead"></div>
+    <div id="left">
+    <div class="back"><a href="http://befairdc.org" target="_blank">Go to Site</a></div>
+    	<div id="focusscr1"><img src="./images/befairdc.jpg" class="focusscr"></a></div>
+    </div>
+    <div id="right">
+    	<div id="rightmargin">
+		<div class="casehd">Summary:</div> 
+		<p>This project required building a Drupal 7 website and integrating it with our current Drupal and MySQL code base.</p>
+		<div class="casehd">Requirements:</div>
+			<ol>
+				<li>Full CMS</li>
+				<li>Simple to update</li>
+				<li>Minimalist design</li>
+				<li>Distinct design that did not reference focusdc.org design aesthetics.</li>
+			</ol>
+		<div class="casehd">Problem:</div> 
+		<p>How do I create a CMS that cannot share commonalities with its parent site?</p>
+		<div class="casehd">Solution:</div> 
+		<p>This is a secondary site for the community outreach component of FOCUS and turned out to be a fairly simple build. The design was to be minimalist, but needed to be kept separate from focusdc.org. I received very little push back on design and the initial project was completed in about a week. Originally, I built the site in wordpress, but branched out to a Drupal 7 multi site instance to simplify updates and unify the sites' code base.</p>
+		<div class="casehd">Outcome:</div>  
+		<p>This was probably the easiest site I've had to build. It is lightweight and managed by a fairly technically proficient staff member. Updates have been simple and the site has had few issues in the couple of years it has been up.</p>
+        </div>
+        <div class="back"><a href="./index.html#work">Back</a></div>
+    </div>
+</body>
+</html>

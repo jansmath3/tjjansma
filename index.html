@@ -1,147 +1,94 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html>
 <head>
-	<title>The Website of TJ Jansma | Web Developer and Information Technologist</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+<meta charset="utf-8">
+<title>The Website of TJ Jansma | Web Developer and Information Technologist</title>
+ 	<link href="style.css" rel="stylesheet" type="text/css">
 	<link rel="Shortcut Icon" href="favicon.ico" />
 	<meta name="msvalidate.01" content="9455B9EC414623F463686D97E55E78A0" />
-	<meta name="Description" content="I appreciate a website meticulously labored over and I am a big fan of circuitry." />
-	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css' />
+	<meta name="Description" content="What really makes me giddy, is when an idea becomes reality." />
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' /></title>
+    <script src="./js/jquery.js"></script>
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+<script>
+$(window).ready(updateHeight);
+$(window).resize(updateHeight);
+
+function updateHeight()
+{
+    var div = $('.life, .work, .contact');
+    var width = div.width();
+    
+    div.css('height', width);
+}
+</script>
 </head>
 
 <body>
-	<div id="content">
-		<div id="menu">
-			<div id="tj">TJ<br />Jansma</div>
-			<div id="tagline">Web Development and Information Technology</div>
-			<div id="menulink">
-				<ul>
-					<li><a href="#work" class="anchors">My Work</a></li>
-					<li><a href="#life" class="anchors">My Life</a></li>
-					<li><a href="#tools" class="anchors">My Tools</a></li>
-                </ul>
-            </div>
-                    <a href="resume.pdf" target="_blank"><span data-tip="Check out my resume" id="resume" class="icons"></span></a>
-                      <a href="http://github.com/jansmath3" target="_blank"><span data-tip="Visit My Github Page" id="github" class="icons"></span></a>
-			          <a href="http://www.linkedin.com/in/tjiii" target="_blank"><span data-tip="Visit My LinkedIn Page" id="linkedin" class="icons"></span></a>
-			          <a href="callto:202-812-1133" target="_blank"><span data-tip="Call me at 202-812-1133" id="phone" class="icons"></span></a>
-			          <a href="mailto:tj@tjjansma.com" target="_blank"><span data-tip="Email me at tj@tjjansma.com" id="email" class="icons"></span></a>
-        </div>		
-		<div id="rightside">
-        	<div id="work">
-				<a class="sitetop">FOCUS</a><br />
-					<a href="http://focusdc.org" target="_blank" id="focus" class="touts"></a>
-				<a class="sitetop">BefairDC</a><br />
-					<a href="http://befairdc.org" target="_blank" id="befairdc" class="touts"></a>
-				<a class="sitetop">Dashboards</a>
-					<a href="http://focusdc.org/data" target="_blank" id="dashboard" class="touts"></a>
-				<a class="sitetop">Pioneer<br />Strategy</a><br />
-					<a href="http://pioneerstrategy.com/" target="_blank" id="pioneer" class="touts"></a>
-				<a class="sitetop">Client</a><br />
-					<a href="http://tjjansma.com/client" target="_blank" id="client" class="touts"></a>
-                <a class="sitetop">IFCMW</a><br />
-					<a href="http://tjjansma.com/ifcmw" target="_blank" id="ifcmw" class="touts"></a>
-            </div>
-			<div id="life">
-            	<div id="live">
-					<div class="lifebrown" id="currently">Currently</div>
-					<div id="ilivein" class="lifebrown">I Live In</div>
-					<div id="goldengate"></div>
-					<div class="lifered" id="sausalito">Sausalito</div>
-					<div id="california" class="lifered">California</div>
-                </div>
-                <div id="music">
-					<div id="playsome" class="lifebrown">I play some</div>
-					<div id="mandolin" class="lifered">mandolin</div>
-					<div id="mando"></div>
-					<div id="and" class="lifebrown">and <a id="guitar" class="lifered">guitar</a></div>
-                </div>
-                <div id="athletics">
-					<div id="sports" class="lifebrown">Sports</div>
-    				<div id="involving" class="lifebrown">involving</div>
-					<div id="boards" class="lifered">boards</div>
-					<div id="orthe" class="lifebrown">or the</div>
-					<div id="board"></div>
-					<div id="outdoors" class="lifered">outdoors</div>
-					<div id="captivate" class="lifebrown">captivate me</div>
-                </div>
-                <div id="travel">
-                	<div id="ive" class="lifebrown">I've <a id="visited" class="lifered">visited</a></div>
-                    <div id="airplane"></div>
-                    <div id="thirty" class="lifered">30 <a id="countries" class="lifebrown">countries</a></div>
-                    <div id="and2" class="lifebrown">and <a id="forty-two" class="lifered">42</a> <a id="states" class="lifebrown">states</a>
-                </div>
-                <div id="create">
-                	<div id="but" class="lifebrown">But what</div> 
-					<div id="really" class="lifebrown">really makes</div>
-                    <div id="megiddy"  class="lifebrown">me <a id="giddy"  class="lifered">giddy</a></div> 
-					<div id="iswhenan" class="lifebrown">is when an</div> 
-                	<div id="idea" class="lifered">idea</a></div>
-                	<div id="becomes" class="lifebrown">becomes</div> 
-					<div id="lightbulb"></div>
-                    <div id="reality" class="lifered">reality</div>
-                </div>
-            </div>
-			<div id="tools">
-				<div class="tooltitle">Certifications</div>
-					<ul class="tool">
-                    	<li>ITIL</li>
-                    	<li>A+ IT</li>
-                    	<li>Powerschool</li>
-                    	<li>Westlaw</li>
-                    	<li>LexisNexis</li>
-                        </ul>
-                <div class="tooltitle">Web</div>
-                	<ul class="tool">
-						<li>Valid X/HTML5/CSS3</li>
-						<li>Javascript</li>
-                        <li>Jquery</li>
-                        <li>PHP</li>
-                        <li>SEO</li>
-                        <li>ActionScript</li>
-                        <li>REGEX</li>
-                        </ul>
-                <div class="tooltitle">CMS</div> 
-                	<ul class="tool">
-                    	<li>Drupal</li>
-                        <li>CiviCRM</li>
-                        <li>Joomla</li>
-                        <li>Wordpress</li>
-                        </ul>
-				<div class="tooltitle">Data</div>
-                	<ul class="tool">
-                    	<li>MySQL</li>
-                        <li>MSSQL</li>
-                        <li>Oracle</li>
-                        <li>Tableau</li>
-                        </ul>
-				<div class="tooltitle">Server</div>
-                	<ul class="tool">
-                        <li>LAMP</li>
-                        <li>Amazon EC2</li>
-                        <li>GIT</li>
-                        <li>Varnish</li>
-                        <li>Memcache</li>
-                        <li>VPN</li>
-                        <li>DHCP/DNS</li>
-                        <li>SSH/SMB/AFP</li>
-                        <li>FTP/RDP</li>
-                        <li>Win Server</li>
-                        <li>Mac Server</li>
-                        </ul>
-				<div class="tooltitle">Design</div>
-                	<ul class="tool">
-                    	<li>Photoshop</li>
-                        <li>Illustrator</li>
-                        <li>Dreamweaver</li>
-                        <li>Flash</li>
-                        <li>Premiere Pro</li>
-                        <li>Blender</li>
-                        </ul>
-				</div>
+<div id="main">
+	
+        <div id="lifehdr" class="head"><div id="hi">Hi?</div><img src="./images/life.png" id="lifehdrimg" class="subhead"></div>
+        <div id="lifedown" class="tridown"></div>
+<script>
+    $(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.life,.work,.contact').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it in */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+	
+});
+</script>
+    		<div id="life">
+				<div id="life1" class="life"><div class="center">My name is<br>TJ Jansma.</div></div>
+    			<div id="life2" class="life"><img src="./images/tj.png" id="tjpic"></div>
+    			<div id="life3" class="life"><div class="center">I build things.</div></div>
+    			<div id="life4" class="life"><div class="center">Smart things.</div></div>
+    			<div id="life5" class="life"><div class="center">Responsive<br> things.</div></div>
+    			<div id="life6" class="life"><div class="center">Things that<br>just work.</div></div>
+            </div>	
+        <div id="workhdr" class="head"><img src="./images/work.png" id="workhdrimg" class="subhead"></div>
+        	<div id="workdown" class="tridown"></div>
+        	<div id="work"><a href="#work"></a>
+    			<div id="focus" class="work"><div class="center"><a href="./focus.html"><img src="./images/focuslogo.png" id="focus"></a></div></div>
+    			<div id="befairdc" class="work"><div class="center"><a href="./befairdc.html"><img src="./images/befairdclogo.png" id="befairdc"></a></div></div>
+    			<div id="pioneer" class="work"><div class="center"><a href="./pioneer.html"><img src="./images/pioneerlogo.png" id="pioneer"></a></div></div>
+    			<div id="client" class="work"><div class="center"><a href="./client.html">Client Portfolio</div></div>
+    			<div id="ifcmw" class="work"><div class="center"><a href="./ifcmw.html">IFCMW</a></div></div>
+    			<div id="you" class="work"><div class="center">You?</div></div>
+        	</div>
+        <div id="contacthdr" class="head"><img src="./images/contact.png" id="contacthdrimg" class="subhead"></div>
+        	<div id="contactdown" class="tridown"></div>
+        	<div id="contact">
+				<div id="contact1" class="contact"><div class="center"><a href="http://tjjansma.com/resume.pdf" target="_blank"><img src="./images/resume.png" id="contact1img"></a></div></div>
+    			<div id="contact2" class="contact"><div class="center"><a href="mailto:tj@tjjansma.com" target="_blank"><img src="./images/email.png" id="contact1img"></a></div></div>
+    			<div id="contact3" class="contact"><div class="center">Want me<br> to build<br> something?</div></div>
+    			<div id="contact4" class="contact"><div class="center">Get in touch.</div></div>
+    			<div id="contact5" class="contact"><div class="center"><a href="http://www.linkedin.com/in/tjiii"" target="_blank"><img src="./images/linkedin.png" id="contact1img"></a></div></div>
+    			<div id="contact6" class="contact"><div class="center"><a href="https://github.com/jansmath3" target="_blank"><img src="./images/github.png" id="contact1img"></a></div></div>
 			</div>
-		</div>
-    </div>
+</div>
+
 </body>
 </html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Website of TJ Jansma | Web Developer and Information Technologist</title>
+ 	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="Shortcut Icon" href="favicon.ico" />
+	<meta name="msvalidate.01" content="9455B9EC414623F463686D97E55E78A0" />
+	<meta name="Description" content="What really makes me giddy, is when an idea becomes reality." />
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' /></title>
+    <script src="./js/jquery.js"></script>
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+<script>
+$(window).ready(updateHeight);
+$(window).resize(updateHeight);
+
+function updateHeight()
+{
+    var div = $('.life, .work, .contact');
+    var width = div.width();
+    
+    div.css('height', width);
+}
+</script>
+</head>
+<body>
+	
+	<div id="main">
+    	<div id="workhdr" class="head">
+    	  <div id="case"> Client Case Study</div><img src="./images/work.png" id="lifehdrimg" class="subhead"></div>
+    <div id="left">
+    	<div class="back"><a href="./client" target="_blank">Go to Site</a></div>
+    	<div id="clientscr1"><img src="./images/client.jpg"></a></div>
+    </div>
+    <div id="right">
+    	<div id="rightmargin">
+		<div class="casehd">Summary:</div> 
+		<p>This was an HTML5 build for a client who wanted horizontal scrolling and lightbox representations of work.</p>
+		<div class="casehd">Requirements:</div>
+			<ol>
+				<li>Lightweight (quick loading)</li>
+				<li>Horizontal Scroll</li>
+				<li>Logical/easy access to portfolio pieces</li>
+			</ol>
+		<div class="casehd">Problem:</div> 
+		<p>How do I easily organize a portfolio so the intended audience can easily view a wide breadth of audio, video and photo work?</p>
+		<div class="casehd">Solution:</div> 
+		<p>Design was an import part of this project and psds were provided for me to code and improve upon. Early on in the process I decided HTML/CSS with some jquery would work great for the layout and lightboxes. Overall, this was  a straightforward build that did not cause many problems. The only difficulty arose in encoding the videos in a manner that was light weight enough to run smoothly on a browser and could be used with a lightbox. Ultimately, I used lightweight fps .mov files in the lightboxes for the videos.</p>
+		<div class="casehd">Outcome:</div>  
+		<p>This website turned out really well and was used for several years. The client was happy with the outcome, but has since rebuilt the site himself for practice and to reflect his newest work.</p>
+        </div>
+        <div class="back"><a href="./index.html#work">Back</a></div>
+    </div>
+</body>
+</html>
